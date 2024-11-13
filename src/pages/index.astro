@@ -1,15 +1,59 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <article>
+    <div id="hero" class="pt-48"><img src="/hero.jpg" alt="" /></div>
+    <h1 class="text-h1_m max-w-6xl text-grey text-center flex items-center justify-center mx-auto pt-32">Skab en unik visuel effekt på din hjemmeside med DYNAMIK-skrifttypens mønstre.</h1>
+    <section class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="col-start-1">
+          <h2 id="om" class="text-h2 text-grey pt-16">Om fonten</h2>
+          <p class="text-p text-grey pt-10">Skrifttypen er inspireret af en blækstil, hvor hver streg er forskellig fra den anden. Linjerne har varierende tykkelse og er ikke helt perfekte, hvilket gør skrifttypen unik.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div class="grid-cols-1 col-span-1 grid-row-2 row-span-1 pt-10"><img src="d.png" alt="" /></div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="col-start-2 text-p text-grey pt-0">
+          <p>enne skrifttype er ideel til tekst, der starter med et stort begyndelsesbogstav, da den indeholder detaljerede mønstre. Kombineret med white space og grid-placeret tekst giver den din hjemmeside et unikt udtryk.</p>
+          <p class="text-p text-grey pt-10">
+            Det er også perfekt til at bruge som logo ved blot at vælge en enkelt bogstav, hvilket skaber et unikt og mindeværdigt visuelt indtryk. De detaljerede mønstre og det markante design giver logoet en distinkt karakter, der skiller sig ud.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="col-start-21">
+          <p class="text-p text-grey pt-32">Et andet eksempel på brug af skrifttypen.</p>
+        </div>
+      </div>
+      <div class="pt-16"><img src="car.jpg" alt="" /></div>
+
+      <div class="grid grid-cols-2 gap-32">
+        <div class="col-start-1">
+          <h2 id="process" class="text-h2 text-grey pt-16">Indblik i processen</h2>
+          <p class="text-p text-grey pt-10">
+            Fonten er blevet sk abt og afprøvet på forskellige måder på iPad ved brug af forskellige pensler. På billedet kan man se udviklingen af bogstavet D. Bagefter er flere bogstaver blevet udviklet ved hjælp af grid.
+          </p>
+          <p class="text-p text-grey pt-10">
+            Den venstre side af hvert bogstav er dobbelt så bred som den højre, der fremstår mere skarp og præget af striber. Begge sider har et unikt mønster, som minder om et dækmønster fra en bil og skaber en følelse af dynamik og bevægelse.
+          </p>
+        </div>
+        <div class="col-start-2 pt-32">
+          <img src="d_ipad.jpg" alt="" />
+        </div>
+      </div>
+      <div class="max-w-4xl pt-16">
+        <img src="grid.jpg" alt="" />
+      </div>
+    </section>
+    <a href="#hero"> <h3 class="hover:underline text-h2 max-w-6xl text-grey text-center flex items-center justify-center mx-auto pt-32 pb-16">Til toppen</h3> </a>
+  </article>
 </MainLayout>
